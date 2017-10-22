@@ -9,12 +9,14 @@ $con = mysqli_connect("localhost","root","","db_reproductor");
         <title>Reproduciendo: </title>
     </head>
     <body>
+        <?php if(isset($_GET["nombreMP3"])){ ?>
         <section>
             <h4><?php echo $_GET["nombreMP3"]; ?></h4>
             <audio controls autoplay>
                 <source src="mp3/<?php echo $_GET["rutaMP3"]; ?>" type="audio/mpeg"  />
             </audio>
         </section>
+        <?php } ?>
         <aside>
             <h1>Listado de canciones</h1>
             <ul>
