@@ -1,4 +1,9 @@
 <?php 
+
+session_start();
+ require_once("funciones.php");
+validarSession();
+
 /*
 create table usuario(
 	id int not null AUTO_INCREMENT PRIMARY KEY,

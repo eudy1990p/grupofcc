@@ -27,6 +27,11 @@
              Reproductor mp3    
             </a>
         </li>
+    <li>
+            <a href="contacto.php">
+             Contacto    
+            </a>
+        </li>
 
         <li>
             <a href="login.php">
