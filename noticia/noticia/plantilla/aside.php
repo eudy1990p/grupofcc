@@ -7,7 +7,7 @@
                 $query = getCategorias($conn); 
                 while($categorias = mysqli_fetch_array($query) ){
             ?>
-            <a href="#" class="list-group-item"><?php echo $categorias["nombre"]; ?></a>
+            <a href="articulo_por_categoria.php?idCategoria=<?php echo $categorias["id"]; ?>" class="list-group-item"><?php echo $categorias["nombre"]; ?></a>
             <?php } ?>
           </div>
         </div><!--/span-->
